@@ -1,5 +1,5 @@
 {% set name = "vyper" %}
-{% set version = "0.2.13" %}
+{% set version = "0.2.14" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vyper-{{ version }}.tar.gz
-  sha256: 88218584ea57103833cdd66977ecd20845c1c2e809f86eaf2e7c51b570d06315
+  sha256: 464a7423f48790a3d8b5a058e69e8761aa89311cada6228ee1b5ca7b57d5894b
 
 build:
   number: 0
