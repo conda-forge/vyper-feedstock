@@ -1,5 +1,5 @@
 {% set name = "vyper" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.3" %}
 
 
 package:
@@ -11,7 +11,7 @@ source:
   sha256: 3e50cd802696ea3f5e6ab1bf4c9a90a39c332591d416c99f3d2fa93d7d7ba394
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - vyper=vyper.cli.vyper_compile:_parse_cli_args
