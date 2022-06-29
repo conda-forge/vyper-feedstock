@@ -31,7 +31,7 @@ requirements:
     - cached-property ==1.5.2  # [py<38]
     - importlib-metadata  # [py<38]
     - pycryptodome >=3.5.1,<4
-    - python >= 3.6
+    - python >=3.6
     - semantic_version ==2.8.5
     - wheel
 
