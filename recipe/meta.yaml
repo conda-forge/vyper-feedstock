@@ -11,7 +11,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [py>=311 or py2k]
+  skip: true  # [py2k or py<37 or py>=311 ]
   entry_points:
     - vyper=vyper.cli.vyper_compile:_parse_cli_args
     - vyper-serve=vyper.cli.vyper_serve:_parse_cli_args
@@ -23,14 +23,14 @@ requirements:
   host:
     - pip
     - pytest-runner
-    - python >=3.6
+    - python
     - setuptools-scm
   run:
     - asttokens ==2.0.5
     - cached-property ==1.5.2  # [py<38]
     - importlib-metadata  # [py<38]
     - pycryptodome >=3.5.1,<4
-    - python >=3.6
+    - python
     - semantic_version ==2.8.5
     - wheel
 
