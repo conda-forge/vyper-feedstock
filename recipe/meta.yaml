@@ -1,5 +1,5 @@
 {% set name = "vyper" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vyper-{{ version }}.tar.gz
-  sha256: 0409cd8f6ec1d4701bf5554303af5b1466d08de3a9974839101da3b9a8ea040c
+  sha256: 126cb34e31980558474ce57b7054c9c72d33e3d82170b7479e0178b62a0b6dfd
 
 build:
-  number: 1
-  skip: true  # [py2k or py<37 or py>=311 ]
+  number: 0
+  skip: true  # [py2k or py<37 or py>=311]
   entry_points:
     - vyper=vyper.cli.vyper_compile:_parse_cli_args
     - vyper-serve=vyper.cli.vyper_serve:_parse_cli_args
