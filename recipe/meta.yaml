@@ -10,7 +10,7 @@ source:
   sha256: f23c3ddadb4a857b9bcc3af4b6df7f3a80ac3c4c81f723d1b2e78afa3e0f3ba6
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py2k or py<37 or py>=311]
   entry_points:
     - vyper=vyper.cli.vyper_compile:_parse_cli_args
