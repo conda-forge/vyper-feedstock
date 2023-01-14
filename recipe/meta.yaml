@@ -1,5 +1,5 @@
 {% set name = "vyper" %}
-{% set version = "0.3.6" %}
+{% set version = "0.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vyper-{{ version }}.tar.gz
-  sha256: f23c3ddadb4a857b9bcc3af4b6df7f3a80ac3c4c81f723d1b2e78afa3e0f3ba6
+  sha256: 1874eff683b7034ac376547d566d29fd05780bcec9f875c3d9615a9efc82636a
 
 build:
-  number: 1
-  skip: true  # [py2k or py<37 or py>=311]
+  number: 0
+  skip: true  # [py2k or py<38 or py>=311]
   entry_points:
     - vyper=vyper.cli.vyper_compile:_parse_cli_args
     - vyper-serve=vyper.cli.vyper_serve:_parse_cli_args
@@ -27,11 +27,9 @@ requirements:
     - setuptools-scm
   run:
     - asttokens ==2.0.5
-    - cached-property ==1.5.2  # [py<38]
-    - importlib-metadata  # [py<38]
     - pycryptodome >=3.5.1,<4
     - python
-    - semantic_version ==2.8.5
+    - semantic_version >=2.10,<3
     - wheel
 
 test:
