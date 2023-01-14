@@ -11,7 +11,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [py2k or py<38 or py>=312]
+  skip: true  # [py2k or py<38 or py>=311]
   entry_points:
     - vyper=vyper.cli.vyper_compile:_parse_cli_args
     - vyper-serve=vyper.cli.vyper_serve:_parse_cli_args
