@@ -1,11 +1,11 @@
-About vyper
-===========
+About vyper-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vyper-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/vyperlang/vyper
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vyper-feedstock/blob/main/LICENSE.txt)
 
 Summary: Vyper: the Pythonic Programming Language for the EVM
 
